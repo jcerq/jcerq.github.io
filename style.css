@@ -1,0 +1,388 @@
+body {
+  font-family: "Radnika Next Regular";
+  font-weight: normal;
+  display: block;
+  position: static;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+    font-family: 'museo_sans_rounded700';
+    src: url('fontes/gingar/gingar-700-webfont.woff2') format('woff2'),
+         url('fontes/gingar/gingar-700-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Radnika Next Regular';
+    src: url('/fontes/oiticica/RadnikaNext-Regular.woff2') format('woff2'),
+         url('/fontes/oiticica/RadnikaNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Navbar */
+
+.w-logo {
+  display: inline-block;
+  transition: width .4s ease-in-out;
+}
+.w-logo path {
+  fill: #801BB3;
+  transition: fill .4s ease-in-out;
+}
+
+.logo-mini {
+  width: 53px;
+  fill: white;
+}
+
+.logo-mini path{
+  fill: white;
+}
+
+nav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 100px;
+  position: fixed;
+  z-index: 9999;
+  min-height: 130px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0);
+  color: #2e2e2e;
+  transition: min-height .4s ease-in-out, background-color .4s ease-in-out, box-shadow .4s ease-in-out, color .4s ease-in-out;
+}
+
+nav ul {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+nav ul li {
+  margin: 0 30px;
+  padding: 10px;
+}
+
+nav .btn-contato {
+  background-color: #801BB3;
+  color: #FFF;
+  border-radius: 8px;
+  margin-right: 0;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.05);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+}
+
+nav .btn-contato:hover {
+  animation: jump .3s 1;
+}
+
+.nav-scrolled{
+  min-height: 60px;
+  background-color: rgba(128, 27, 179);
+  box-shadow: 0 2px 4px rgba(79, 13, 115, 0.3);
+  color: white;
+}
+
+.nav-scrolled .btn-contato {
+  background-color: #FFF;
+  color: #801BB3;
+}
+
+/* Conteúdo geral */
+
+.sec-hero {
+  display: grid;
+  align-items: center;
+  margin: 0 100px;
+  min-height: 768px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+}
+
+.hero-txt {
+  max-width: 415px;
+}
+
+.hero-txt h1 {
+  line-height: 72px;
+  margin-bottom: 50px;
+}
+
+.hero-txt p {
+  color: #666666;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.hero-img {
+  overflow: visible;
+}
+
+
+.divider-container {
+  position: relative;
+}
+
+.hero-divider {
+  z-index: -10;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.hero-divider polygon {
+  fill: #F0F0F0;
+}
+
+.sec-solucoes{
+  display: block;
+  position: static;
+  background-color: #F0F0F0;
+  padding-top: 80px;
+}
+
+.sec-solucoes h2 {
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: normal;
+  color: #2e2e2e;
+  margin-bottom: 95px;
+}
+
+.sec-solucoes .grid-container {
+  margin: 0 80px;
+  padding-bottom: 120px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2.9rem;
+}
+
+.grid-item h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: #2e2e2e;
+  letter-spacing: .16em;
+  font-weight: normal;
+  margin-bottom: 60px;
+  transition: color .15s ease-in-out;
+}
+
+.grid-item p {
+  transition: color .15s ease-in-out;
+}
+
+.sec-solucoes .grid-container .grid-item {
+  position: relative;
+  padding: 85px 35px;
+  background-color: white;
+  border-radius: 8px;
+  border: 4px solid rgba(128, 27, 179, 0);
+  box-shadow: 0 2px 4px rgba(0,0,0, .3);
+  transition: border .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.sec-solucoes .grid-container .grid-item:hover {
+  border: 4px solid rgba(128, 27, 179, 1);
+  box-shadow: 0 2px 4px rgba(128, 27, 179, .4);
+}
+
+.sec-solucoes .grid-container .grid-item:hover h3{
+  color: rgba(128, 27, 179, 1);
+}
+
+.sec-solucoes .grid-container .grid-item:hover p{
+  color: #2e2e2e;
+}
+
+.sec-solucoes p {
+  font-weight: normal;
+  font-size: 2.4em;
+  color: #666666;
+  line-height: 1.5em;
+}
+
+.solucoes-ico {
+  text-align: center;
+  position: absolute;
+  top: -41px;
+  left: 0;
+  right: 0;
+}
+
+.solucoes-btn-row {
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .1s ease-in-out;
+}
+
+.sec-solucoes .grid-container .grid-item:hover .solucoes-btn-row {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.btn-quero {
+  font-family: "museo_sans_rounded700";
+  font-weight: normal;
+  background-color: #801bb3;
+  color: white;
+  padding: 18px 22px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: .15em;
+}
+
+.btn-quero:hover {
+  animation: jump .3s 1;
+}
+
+.sec-contato {
+  display: block;
+}
+
+.sec-contato:before, .sec-contato:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contato-texto  {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.contato-texto h2 {
+  font-size: 2.2em;
+  font-weight: normal;
+  margin-bottom: 40px;
+  line-height: 1.25em;
+}
+
+.contato-texto p {
+  font-size: 1.15em;
+  font-weight: normal;
+  margin-bottom: 80px;
+}
+
+.contato-dadoseform {
+  margin-top: 80px;
+  color: #2e2e2e;
+}
+
+.contato-dadoseform h4 {
+  font-size: 1.14em;
+  color: #801bb3;
+  margin-bottom: 10px;
+}
+
+.contato-dadoseform p {
+  font-size: 1.6em;
+  font-weight: normal;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.contato-col1 {
+  box-sizing: border-box;
+  float: left;
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  padding-left: 100px;
+  padding-right: 4%;
+  background-color: #801bb3;
+}
+
+.contato-col2 {
+  box-sizing: border-box;
+  float: left;
+  display: inline-block;
+  /* min-width: 60%; */
+  /* padding-right: 100px; */
+  padding-left: 14%;
+  min-height: 100%;
+}
+
+.contato-divider {
+  position: absolute;
+  right: -125px;
+  top: 0;
+  height: 100%;
+  z-index: -9999;
+}
+
+.redes-ico {
+  margin-right: 10px;
+}
+
+footer {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 100px;
+  height: 90px;
+  background-color: #2e2e2e;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Tipografia */
+
+nav ul li {
+  font-size: .95em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-family: "museo_sans_rounded700";
+  font-weight: normal;
+}
+
+h1, h2, h3 {
+  font-family: "museo_sans_rounded700";
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #2E2E2E;
+}
