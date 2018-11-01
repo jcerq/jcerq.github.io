@@ -33,7 +33,8 @@ a {
   transition: width .4s ease-in-out;
 }
 .w-logo path {
-  fill: #801BB3;
+  fill: #783f95;
+  fill: #783f95;
   transition: fill .4s ease-in-out;
 }
 
