@@ -82,7 +82,7 @@ nav .btn-contato {
   color: #FFF;
   border-radius: 8px;
   margin-right: 0;
-  transition: background-color .4s ease-in-out, color .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 @keyframes jump {
