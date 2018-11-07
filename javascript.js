@@ -4,7 +4,7 @@ $(function() {
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= 15) {
+        if (scroll >= 25) {
             nav.addClass("nav-scrolled");
             wlogo.addClass("logo-mini");
         } else {
