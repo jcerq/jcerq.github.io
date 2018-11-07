@@ -393,3 +393,10 @@ h1 {
   font-size: 3.5em;
   color: #2E2E2E;
 }
+
+
+/* @media screen and (max-width: 900px) {
+  [class*="-md"] {
+    display: none;
+  }
+} */
