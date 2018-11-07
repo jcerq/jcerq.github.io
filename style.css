@@ -116,7 +116,7 @@ nav .btn-contato:hover {
 /* Conteúdo geral */
 
 .sec-hero {
-  display: grid;
+  display: flex;
   align-items: center;
   margin: 0 100px;
   grid-template-columns: 1fr 1fr;
@@ -127,6 +127,7 @@ nav .btn-contato:hover {
 }
 
 .hero-txt {
+  flex: 1;
   /* max-width: 415px; */
 }
 
@@ -142,13 +143,15 @@ nav .btn-contato:hover {
 }
 
 .hero-img {
-  max-width: 500px
-  position: absolute;
+  flex: 1;
+  position: relative;
   overflow: visible;
-  right: 9%;
-  z-index: -1;
+  /* right: 8%; */
 }
 
+.hero-illustration {
+  transform: scale(1.2) translateX(-8%);
+}
 
 .divider-container {
   position: relative;
