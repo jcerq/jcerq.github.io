@@ -301,7 +301,7 @@ nav .btn-contato:hover {
 .contato-dadoseform {
   text-align: center;
   color: #2e2e2e;
-  /* padding: 70px 0 35px 0; */
+  padding: 70px 0 35px 0;
 }
 
 .contato-dadoseform h4 {
@@ -326,7 +326,6 @@ nav .btn-contato:hover {
 
 .contato-col2 {
   position: relative;
-  padding: 70px 0 40px 0;
 }
 
 .divisoria-vertical {
@@ -341,6 +340,10 @@ nav .btn-contato:hover {
   right: 0;
 }
 
+
+.contato-divider {
+  display: none;
+}
 
 /* responsividade da seção de contato */
 @media (min-width: 960px) {
@@ -361,9 +364,8 @@ nav .btn-contato:hover {
 
   .contato-dadoseform {
     text-align: left;
-    margin-top: 80px;
     color: #2e2e2e;
-
+    padding: 40px 40px 40px 12%;
   }
 
   .contato-dadoseform p {
@@ -385,21 +387,22 @@ nav .btn-contato:hover {
     flex: 2;
   }
 
+
+  .contato-divider {
+    display: block;
+    position: absolute;
+    right: -275px;
+    top: 0;
+    height: 100%;
+    z-index: -9999;
+  }
+
   .contato-col2 {
     box-sizing: border-box;
     flex: 3;
   }
 
 }
-
-
-/* .contato-divider {
-  position: absolute;
-  right: -125px;
-  top: 0;
-  height: 100%;
-  z-index: -9999;
-} */
 
 .redes-ico {
   margin-right: 10px;
