@@ -297,7 +297,7 @@ nav .btn-contato:hover {
 
 .contato-texto h2 {
   text-align: center;
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: normal;
   /* margin-bottom: 40px; */
   line-height: 1.25em;
@@ -373,6 +373,7 @@ nav .btn-contato:hover {
   .contato-texto h2 {
     text-align: left;
     display: inline-block;
+    font-size: 2.2em;
   }
 
   .contato-dadoseform {
@@ -439,6 +440,11 @@ footer {
   color: white;
   text-transform: uppercase;
 }
+
+
+.copyright {
+    font-size: 12px;
+  }
 
 
 @media (max-width: 960px) {
