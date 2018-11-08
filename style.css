@@ -282,8 +282,17 @@ nav .btn-contato:hover {
   animation: jump .3s 1;
 }
 
+.contato-offset{
+  display: block;
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  top: -60px;
+}
+
 .sec-contato {
   display: block;
+  position: relative;
 }
 
 .contato-texto h2 {
@@ -496,4 +505,16 @@ h1 {
   margin: 0 auto 80px auto;
   text-align: center;
   }
+}
+
+/* .sec-contato:before {
+    content: "";
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    top: -130px;
+} */
+
+.sec-contato {
+  padding: -60px;
 }
