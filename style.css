@@ -427,6 +427,24 @@ footer {
   text-transform: uppercase;
 }
 
+
+@media (max-width: 960px) {
+  footer {
+    display: block;
+    box-sizing: content-box;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer .copyright {
+    margin-bottom: 20px;
+  }
+
+  footer .logo-full-h {
+    max-width: 150px;
+  }
+}
+
 /* Tipografia */
 
 nav ul li {
