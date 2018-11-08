@@ -414,6 +414,7 @@ h1 {
   }
 
   .grid-item {
+  display: block;
   max-width: 480px;
   margin: 0 auto 80px auto;
   text-align: center;
