@@ -295,12 +295,13 @@ nav .btn-contato:hover {
   text-align: center;
   font-size: 1.15em;
   font-weight: normal;
+  line-height: 1.4em;
 }
 
 .contato-dadoseform {
   text-align: center;
   color: #2e2e2e;
-  padding: 70px 0 35px 0;
+  /* padding: 70px 0 35px 0; */
 }
 
 .contato-dadoseform h4 {
@@ -321,6 +322,11 @@ nav .btn-contato:hover {
   color: white;
   background-color: #801bb3;
   padding: 40px;
+}
+
+.contato-col2 {
+  position: relative;
+  padding: 70px 0 40px 0;
 }
 
 .divisoria-vertical {
