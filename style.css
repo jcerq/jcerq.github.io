@@ -410,7 +410,7 @@ h1 {
 
 @media (max-width: 1100px) {
   .sec-solucoes .grid-container {
-    /* text-align: center; */
+    padding-bottom: 30px;
   }
 
   .grid-item {
