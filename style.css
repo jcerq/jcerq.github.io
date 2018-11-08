@@ -334,7 +334,7 @@ nav .btn-contato:hover {
   position: relative;
   color: white;
   background-color: #801bb3;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .contato-col2 {
@@ -399,6 +399,7 @@ nav .btn-contato:hover {
     /* float: left; */
     position: relative;
     flex: 2;
+    padding: 40px;
   }
 
 
