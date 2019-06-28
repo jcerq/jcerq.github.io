@@ -564,10 +564,10 @@ h1 {
 
   .hero-img-md {
     text-align: center;
-    width: 100%;
+    max-width: 100%;
     display: block;
     position: relative;
-    left: -7%;
+    left: -6%;
     margin-top: -50px;
   }
 
