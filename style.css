@@ -575,3 +575,10 @@ h1 {
     max-width: 400px;
   }
 }
+
+
+@media screen and (max-width: 420px) {
+  nav ul li {
+    margin-right: 15px;
+  }
+}
