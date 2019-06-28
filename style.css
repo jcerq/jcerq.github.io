@@ -129,6 +129,7 @@ nav .btn-contato:hover {
 }
 
 .hero-txt {
+  padding-top: 80px;
   flex: 1;
   /* max-width: 415px; */
 }
@@ -360,6 +361,10 @@ nav .btn-contato:hover {
 
 /* responsividade da seção de contato */
 @media (min-width: 960px) {
+
+  .hero-img-md {
+    display: none;
+  }
   .divisoria-vertical {
     display: none;
   }
@@ -449,6 +454,7 @@ footer {
 
 
 @media (max-width: 960px) {
+
   footer {
     display: block;
     box-sizing: content-box;
@@ -524,4 +530,48 @@ h1 {
 
 .sec-contato {
   padding: -60px;
+}
+
+@media screen and (max-width: 830px) {
+
+  .sec-hero {
+    display: block;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .hero-txt {
+    display: block;
+    text-align: center;
+    padding-top: 0;
+    position: relative;
+    top: -72px;
+  }
+
+  .hero-txt h1 {
+    font-size: 3.6rem;
+  }
+
+  .hero-txt p {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-img-md {
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    left: -7%;
+    margin-top: -50px;
+  }
+
+  .hero-img-md svg{
+    width: 400px;
+  }
 }
