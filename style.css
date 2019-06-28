@@ -572,6 +572,6 @@ h1 {
   }
 
   .hero-img-md svg{
-    width: 400px;
+    max-width: 400px;
   }
 }
