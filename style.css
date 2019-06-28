@@ -581,4 +581,8 @@ h1 {
   nav ul li {
     margin-right: 15px;
   }
+
+  nav {
+    min-height: 90px;
+  }
 }
