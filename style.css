@@ -65,6 +65,8 @@ nav {
   transition: min-height .4s ease-in-out, background-color .4s ease-in-out, box-shadow .4s ease-in-out, color .4s ease-in-out;
 }
 
+[class*="sec-"] { max-width: 1170px; margin:0 auto;}
+
 nav ul {
   box-sizing: border-box;
   display: -webkit-flex;
@@ -123,7 +125,6 @@ nav .btn-contato:hover {
 .sec-hero {
   display: flex;
   align-items: center;
-  margin: 0 6%;
   overflow: visible;
   z-index: 9998;
 }
@@ -173,7 +174,6 @@ nav .btn-contato:hover {
 .sec-solucoes{
   display: block;
   position: static;
-  background-color: #F0F0F0;
   padding-top: 80px;
 }
 
@@ -291,6 +291,13 @@ nav .btn-contato:hover {
   top: -60px;
 }
 
+@media (min-width: 960px) {
+  .wrapper-contato {
+    background: rgb(128,27,179);
+    background: linear-gradient(90deg, rgba(128,27,179,1) 0%, rgba(128,27,179,1) 33%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);
+  }
+}
+
 .sec-contato {
   display: block;
   position: relative;
@@ -369,16 +376,10 @@ nav .btn-contato:hover {
     display: none;
   }
 
-  .contato-texto p {
-    text-align: left;
-    margin-top: 20px;
-    display: inline-block;
-  }
-
   .contato-texto h2 {
-    text-align: left;
-    display: inline-block;
     font-size: 2.2em;
+    text-align: left;
+    line-height: 1.5;
   }
 
   .contato-dadoseform {
@@ -553,7 +554,7 @@ h1 {
   }
 
   .hero-txt p {
-    max-width: 520px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -572,7 +573,7 @@ h1 {
 
   .hero-img-md svg{
     position: relative;
-    left: -7%;
+    left: -5%;
     max-width: 400px;
   }
 }
